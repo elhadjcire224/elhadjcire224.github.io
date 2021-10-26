@@ -1,0 +1,49 @@
+html{
+    scroll-behavior: smooth;
+}
+@font-face {
+
+    font-family:quicksand;
+    src: url(/quicksand/Quicksand-Italic.otf); 
+}
+@font-face {
+    font-family: quicksandbold;
+    src: url(/quicksand/Quicksand-BoldItalic.otf);
+}
+body{
+    margin: 0%;
+    background: url(cool-background_topography.svg) no-repeat top right fixed,#d9d9d9dd scroll repeat-y ;
+    font-family: quicksand,'Century Ghothic',sans-serif;
+}
+h1,h2{
+    
+    font:250% quicksandbold;
+    text-align: center;
+    text-shadow: 0px 0px 6px white;
+}
+.titre{
+    text-align: center;
+    color: gold;
+    
+}
+img{
+    border: 4px inset;
+    /* box-shadow: white  2px 2px 0px; */
+    
+}
+.aussi{
+    text-align: center;
+}
+.Qui_suis-je{
+    display: inline;
+    width: 50%;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    
+    padding: 10px;
+    margin-bottom: 5px;
+    background: #343434 fixed;
+}
