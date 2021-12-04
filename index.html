@@ -1,87 +1,137 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="CV.css">
-        <title>CV-Elhadj Cire</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="styles.css">
+        <!-- <link rel="stylesheet" href="Cv.css"> -->
+        <title>CV-Mamadou Cire</title>
     </head>
     <body>
         <header>
-            <h1>Elhadj Ciré Bah</h1>
+            <h1>Mamadou Ciré Bah</h1>
+        
             <nav>
-                <ul>
-                    <li><a href="#Qui_suis-je">Qui suis-je</a></li>
-                    <li><a href="#experiences">Mes Expériences</a></li>
-                    <li><a href="#cursus">Cursus Scolaire</a></li>
-                    <li><a href="#formations">Formations</a></li>
-                    <li><a href="#competences">Mes Compétences</a></li>
-                    <li><a href="#contacte_moi">Contacte Moi!</a></li>
-                    
-                </ul>
+                <div>
+                    <ul>
+                        <a class="nav_qui_suis-je" href="#qui_suis-je"><li >Qui suis-je</li></a>
+                        <a href="#experience"> <li>Expériences</li>      </a>
+                        <a href="#"><li>Cursus</li></a>
+                        <a href="#"><li>  Autres Formations </li></a>
+                        <a href="#"><li>  Compétences </li></a>
+                        <a href="#"> <li>contact </li> </a>
+                    </ul>
+                </div>
             </nav>
         </header>
-        
-        <section class="moi" id="Qui_suis-je">
-            <div class="Qui_suis-je"><a href="2.jpg" target="_blank"><img width=20% src="2.jpg" alt="ma photo de profil"></a></div>
-            <div class="Qui_suis-je">
-                <h2 class="titre">Qui suis-je ?</h2>
-                <p>Je suis un Etudiant en MIAGE à l'université Gamal Abdel Nasser de conakry, actuellement en 2ème année de licence.</p>
-                <p>
-                    Passionné dans le domaine de l'informatique et des nouvelles technologies, jusqu'à présent je me suis formé 
-                    de manière autodidacte, mais je trouve cela plus pertinent pour mon apprentissage d'integrer une entreprise et de 
-                    bénéficier de formateurs pour enrichir et mettre en pratique mes connaissances.
-                </p>
-                <h3 class="aussi">Suis aussi</h3>
-                <p>je suis aussi un comptable. Passionné je suis extrement motivé pour apprendre et trouver une société pour la quelle je pourrais m'investir. </p>
-            </div>
-            
-            
-        </section>
-        <section id="experiences">
-            <h2 class="titre">Mes Expériences</h2>
-            <p> <strong>Octobre 2021</strong>: j'ai créé mon CV en ligne</p>
-            <p>Pour l'instant j'apprends et je fais des selfs projets</p>
-        </section>
-        <section id="cursus">
-            <h2 class="titre">Cursus Scolaire</h2>
-            <ul>
-                <li><strong>2020 - à nos jour</strong> : Etudiant en MIAGE à l'université <strong>Gamal Abdel Nasser de Conakry</strong></li>
-                <li><strong>2018 - 2020</strong> : Cursus lycéén et obtention du <strong>Baccalauréat Unique</strong></li>
-                <li><strong>2018 - 2014</strong> : Etudes sécondaires et obtiention du  <strong> BEPC </strong></li>
-                <li><strong>2014 - 2008</strong> : Etudes Primaires et obtention de <strong>L'Examen d'entrée en 7 <sup>ème</sup> Année</strong></li>
-            </ul>
-        </section>
-        <section id="formations">
-            <h2 class="titre">Formations</h2>
-            <ul>
-                <li><strong> Août 2021</strong>: Formation HTML & CSS sur la plateforme <a href="https://openclassroom.com" target="_blank">Openclassroom </a></li>
-                <li><strong>Mai 2021 </strong>:Formation en Language Python sur la plateforme <a href="http://udemy.com" target="_blank" rel="noopener noreferrer">udemy</a></li>
-            </ul>
-        </section>
-        <section id="competences">
-            <h2 class="titre">Compétences</h2>
-            <ul>
-                <li>Language C</li>
-                <li>Language Python</li>
-                <li>HTML & CSS</li>
-                <li>Comptabilité Financiére</li>
-                <li>Microsoft Excel</li>
-                <li>Microsoft Word</li>
-            </ul>
-        </section>
-        <section id="contacte_moi">
-            <h2 class="titre">Contacte Moi!</h2>
-            <address>
-                <p>Email : <a href="mailto:bahmamadoucire14@gmail.com">bahmamadoucire14@gmail.com</a></p>
-                <p>Tel : <a href="tel:+224 625 551 421"> +224 625 551 421</a></p>
-                <p>Addresse : Lambayi,Ratoma,Conakry,Guinnée.</p>
-                
-            </address>
-        </section>
+        <section>
+            <section class="section_qui_suis-je_et_photo">
+                <div><a href="/img/2.jpg" target="_blank"><img src="/img/2.jpg" alt="ma photo"></a></div>
+                <div class="div_qui_suis-je">
+                    <h2 id="qui_suis-je">Qui suis-je ?</h2>
+                    <div class="p_qui_suis-je">
+                        <p>
+                            Je suis un <span>Etudiant</span> en <span><abbr title="Maths Informatique Appliquée à la Gestion d'Entreprise">MIAGE</abbr></span>
+                            à l'université <span><strong>Gamal Abdel Nasser de Conakry</strong></span>.
+                        </p>
+                        <p>
+                            Passionné de l'informatique et des nouvelles technologies depuis tous pétit, jusqu'à présent je me suis 
+                            formé de manière <span>autodidacte</span> mais je trouve cela plus pertinent pour mon apprentissage d'integrer une entreprise
+                            et de bénéficier des formateurs plus expérimentés pour enrichir et mettre en place mes connaissances.
+                        </p>
+                        <h3 class="p_qui_suis-je_aussi">
+                            Suis aussi:
+                        </h3>
+                        <p>
+                            Je suis à la fois <span>informaticien</span> et <span>comptable</span>. <span>Passionné</span>, je suis extrement motivé pour apprendre et trouver une société 
+                            pour la quelle je pourrai m'investir.
+                        </p>
+                    </div>
+                </div>
+            </section>  <!--fin de la section photo_et_qui_suis-je -->
 
+            <!-- debut pour "experiences" -->
+            <section class="section_experience">  
+                <h2 id="experience">Expériences</h2>
+                <p > <strong class="date">Octobre 2021</strong>: j'ai créé mon CV en ligne</p>
+                <p>Pour l'instant j'apprends et je fais des selfs projets</p>
+            </section>
+            <!-- debut pour Cursus Scolaire -->
+            <section class="cursus">
+                <h2>Cursus Scolaire</h2>
+                <h4 class="ecole"><strong>Université Gamal Abdel Nasser de Conakry</strong></h4> 
+                <p><strong class="date">2022 : 2ème Année de licence</strong></p>
+                <ul>
+                    <li>2020 - 2021 : 1ère Année de licence</li>
+                </ul>
+
+                <h4 class="ecole">Hadja Fatou Djaby</h4>
+                <p> <strong class="date">2020 :  Baccalauréat Unique</strong></p>
+                <ul>
+                    <li>▶ 2020 – 2019 : Terminale SE</li>
+                    <li>▶ 2019 – 2018 : 12ème SE</li>
+                    <li>▶ 2018 – 2017 : 11ème SE</li>
+                </ul>
+
+                <h4 class="ecole">Oumou Baldé</h4>
+                <p><strong class="date">2016 : BEPC (Brevet d’Etude du Premier Cycle)</strong></p>
+                <ul>
+                    <li>▶  2016 – 2015 : 10ème Année</li>
+                    <li>▶  2016 – 2015 : 9ème Année</li>
+                    <li>▶  2015 – 2014 : 8ème Année</li>
+                    <li>▶  2018 – 2017 : 7ème Année</li>
+                </ul>
+               
+                <h4 class="ecole">Hadja Fatou Djaby</h4>
+                <p><strong class="date">2014 : Examen d’Entrée en 7ème Année</strong> 
+                <ul>
+                    <li>▶  2014 – 2013 : 6éme Année</li>
+                    <li>▶  2014 – 2013 : 5éme Année</li>
+                    <li>▶   2013 – 2012 : 4éme Année</li>
+                    <li>▶  2012 – 2011 : 3ème Année</li>
+                    <li>▶  2011 – 2010 : 2ème Année</li>
+                    <li>▶  2010 – 2009 : 1ère Année</li>
+                </ul>
+
+            </section>
+            <!-- debut autres formations -->
+            <section class="autres_formations">
+                <h2>Autres Formations</h2>
+                <ul>
+                    <li><strong class="date">Octobre 2021</strong>:Formation en Developpeur <strong>Web</strong>sur la plateforme <a class="lien_rouge" href="http://udemy.com" target="_blank" rel="noopener noreferrer">udemy</a></li>
+                    <li><strong class="date"> Août 2021</strong>: Formation HTML & CSS sur la plateforme <a class="lien_rouge" href="https://openclassroom.com" target="_blank">Openclassroom </a></li>
+                    <li><strong class="date">Mai 2021 </strong>:Formation en Language Python sur la plateforme <a class="lien_rouge" href="http://udemy.com" target="_blank" rel="noopener noreferrer">udemy</a></li>
+                </ul>
+            </section>
+            <!-- debut des competences -->
+            <section class="competences">
+                <h2>Compétences</h2>
+                <ul>
+                    <li> <i><img src="/icones/icone_C.svg" alt=""></i> Language C</li>
+                    <li> <i><img src="/icones/LogosPython.svg" alt=""></i> Language Python</li>
+                    <li> <i><img src="/icones/LogosHtml5.svg" alt=""> | <img src="/icones/LogosCss3.svg" alt=""></i> HTML & CSS</li>
+                    <li> <i><img src="/icones/MapAccounting.svg" alt=""C></i> Comptabilité Financiére</li>
+                    <li> <i><img src="/icones/VscodeIconsFileTypeExcel.svg" alt=""></i> Microsoft Excel</li>
+                    <li> <i><img src="/icones/VscodeIconsFileTypeWord.svg" alt=""></i> Microsoft Word</li>
+                </ul>
+            </section>
+            <!-- debut contact -->
+            <section>
+                <address>
+                    <p> <i><img src="/icones/MdiEmail.svg" alt=""></i> Email : <a href="mailto:bahmamadoucire14@gmail.com">bahmamadoucire14@gmail.com</a></p>
+                    <p> <i><img src="/icones/IcRoundPhone.svg" alt=""></i> Tel : <a href="tel:+224 625 551 421"> +224 625 551 421</a></p>
+                    <p> <i><img src="/icones/ClarityHouseSolid.svg" alt=""></i> Addresse : Cosa,Ratoma,Conakry,Guinnée.</p>
+                </address>
+            </section>
+
+        </section>
         <footer>
-            <p>&copy; 2021 Designed by Elhadj Ciré</p>
+            <p>&copy; 2021 Designed by  Elhadj Ciré </p>
+            <p> <i><img src="/icones/FaSolidCloudDownloadAlt.svg" alt=""><a href="/img/CV-Elhadj_Cire_Bah.pdf">Télécharger mon CV</a></i></p>
+            
         </footer>
+
     </body>
 </html>

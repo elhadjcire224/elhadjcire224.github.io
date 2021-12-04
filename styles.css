@@ -1,0 +1,309 @@
+html{
+    scroll-behavior: smooth;
+}
+
+/* importer les polices */
+@font-face {
+    font-family: alex;
+    src: url(/quicksand/AlexBrush-Regular.ttf);
+}
+@font-face {
+    font-family: quicksandbolditalique;
+    src: url(/quicksand/Quicksand-BoldItalic.otf);
+}
+@font-face {
+    font-family: quicksandbold;
+    src: url(/quicksand/Quicksand-Bold.otf);
+}
+@font-face {
+    font-family: quicksand;
+    src: url(/quicksand/Quicksand-Regular.otf);
+}
+/* stylisation des dates */
+
+
+/* la stylisation de mon nom */
+header h1{
+    text-align: center;
+    font-family: quicksandbold;
+    background: linear-gradient(#434343,white);
+    margin: 0%;
+    padding: 30px;
+    text-shadow: white 2px -3px 5px;
+    font-size: 4.2em;
+    
+    
+}
+
+/* stylisation de mon menu de navigation */
+    /* desactivation des puces */
+
+nav{
+    
+    margin: 0%;
+}
+nav a{
+    text-decoration: none;
+    padding: 30px 20px;
+    color: white;
+    font-family: quicksand;
+    
+    
+}
+nav li{
+    list-style-type: none;
+}
+nav ul{
+    display: flex;
+    background-color: #424558;
+    justify-content: center; 
+   
+}
+/* liens style */
+
+
+.nav_qui_suis-je:hover{
+    background-color: rgba(153, 153, 153, 0.446);
+    /* flex:1; */
+    text-align: center;
+    padding-top: 25px; ;
+    border-top:rgba(153, 153, 153, 1) 5px solid;
+
+}
+
+
+
+/* nav{
+    margin: 0%;
+}
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+    font-family: quicksand;
+    font-size: 104%;
+    
+}
+header nav ul li{
+    list-style-type: none;
+     padding: 30px; 
+    text-align: center;
+     border: white 1px solid; 
+     list-style-type:var(▶); 
+    
+}
+
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    background-color: #434343;
+    margin: 0%; 
+     
+    
+}*/
+/* stylisation de l'image profile */
+a img{
+    width: 300px;
+    margin: 5px 0px 0px 10px;
+    border-radius: 20px;
+    border: #434343 outset 4px;
+    box-shadow: #434343 2px 5px 10px ;
+
+}
+/* assemblage de ma photo profile et ma section "qui_suis-je" */
+.section_qui_suis-je_et_photo{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    overflow: auto;
+    height: 350PX;
+    
+}
+.div_qui_suis-je{
+    margin: 0px 0px 0px 20px;
+    
+}
+
+/* stylisation de titre de ma balise "qui_suis-je" */
+section div h2{ /*stylisation du titre */
+    text-align: center;
+    font-family: alex;
+    background-color: rgba(160, 52, 88, 0.657);
+    border-radius: 20px;
+    font-size: 35px;
+    padding: 10px;
+    box-shadow: #434343 2px 5px 5px;
+    border-style:ridge;
+    color: #777;
+    text-transform: capitalize;
+    margin: 5px 0px 0px 0px;
+    transition: color 1s ease-in, background-color 2s;
+    -moz-transition: color 1s ease-in, background-color 2s;
+    -o-transition: color 1s ease-in, background-color 2s;
+    -webkit-transition: color 1s ease-in, background-color 2s;
+}
+section div h2:hover{
+    background-color: #999;
+    color: rgba(160, 52, 88, 0.657);
+    box-shadow:0px 2px 10px #444;
+
+}
+/* stylisation de nav */
+
+
+.p_qui_suis-je{
+    text-align: center;
+    line-height: 25px;
+    font-family: quicksand;
+    font-size: 25px;
+}
+.p_qui_suis-je_aussi{
+    text-decoration: underline rgba(160, 52, 88, 0.657) 5px;
+    color: #777;
+    font-family: alex;
+}
+.div_qui_suis-je span{
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* stylisation de la section experiences */
+.section_experience{
+    font-family: quicksand, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+}
+.section_experience h2{
+    text-align: center;
+    font-family: alex;
+    background-color:rgba(160, 52, 88, 0.657);
+    border-radius: 20px;
+    font-size: 40px;
+    padding: 10px;
+    box-shadow: #434343 2px 5px 5px;
+    border-style:ridge;
+    color: rgba(157, 197, 120, 1);
+    margin: 5px 20px 0px 0px;
+    transition: color 1s ease-in, background-color 2s;
+    -moz-transition: color 1s ease-in, background-color 2s;
+    -o-transition: color 1s ease-in, background-color 2s;
+    -webkit-transition: color 1s ease-in, background-color 2s;
+}
+.section_experience h2:hover{
+    background-color: rgba(174, 197, 120, 0.883);;
+    color: rgba(160, 52, 88, 0.657);
+    box-shadow:0px 2px 10px #444;
+}
+
+.section_experience strong{
+    padding: 10px;
+    margin-left: 15px;
+    text-align:left;
+    font-family: quicksandbold;
+    color: white;
+    background-color: rgba(160, 52, 88, 0.457);
+    border-radius: 20px;
+    border: rgba(160, 52, 88, 0.957) outset 3px;
+    margin-right: 10px;
+}
+.section_experience strong:hover{
+    box-shadow: black 0px 0px 10px;
+}
+
+/* stylisation du section cursus */
+.cursus h2{
+    text-align: center;
+    font-family: alex;
+    background-color:rgba(160, 52, 88, 0.657);
+    border-radius: 20px;
+    font-size: 40px;
+    padding: 10px;
+    box-shadow: #434343 2px 5px 5px;
+    border-style:ridge;
+    color: rgb(216, 228, 50);
+    margin: 5px 20px 0px 20px;
+    transition: color 1s ease-in, background-color 2s;
+    -moz-transition: color 1s ease-in, background-color 2s;
+    -o-transition: color 1s ease-in, background-color 2s;
+    -webkit-transition: color 1s ease-in, background-color 2s;
+}
+
+.cursus h2:hover{
+    background-color: rgba(201, 212, 47, 0.464);
+    color: rgba(131, 50, 77, 0.657);
+    box-shadow:0px 2px 10px #444;
+}
+.ecole{
+    font-family: quicksandbold;
+    font-size: 30px;
+    margin: 20px 0px 0px 10px;
+    text-transform: uppercase;
+    color:rgba(160, 52, 88, 0.457);
+    /* color:linear-gradient(rgba(160, 52, 88, 0.457),white,black); */
+}
+.date{
+    padding: 15px;
+    margin-left: 15px;
+    /* text-align:left; */
+    font-family: quicksandbold;
+    color: white;
+    background-color: rgba(160, 52, 88, 0.457);
+    border-radius: 20px;
+    border: rgba(160, 52, 88, 0.957) outset 3px;
+    /* margin-right: 10px; */
+    font-size:20px;
+    transition: border 1s ease-in-out, background-color 2s;
+    -moz-transition: border 1s ease-in-out, background-color 2s;
+    -o-transition: border 1s ease-in-out, background-color 2s;
+    -webkit-transition: border 1s ease-in-out, background-color 2s;
+}
+.date:hover{
+    box-shadow: black 0px 0px 10px;
+    border: white inset 3px; 
+    padding: 13px;   
+
+}
+.cursus li{
+    list-style-type: none;
+    margin: 25px;
+    font-size: 25px;
+    font-family: quicksand;
+}
+/* stylisation de la section "autres formations" */
+.autres_formations h2{
+    text-align: center;
+    font-family: alex;
+    background-color:rgba(160, 52, 88, 0.657);
+    border-radius: 20px;
+    font-size: 40px;
+    padding: 10px;
+    box-shadow: #434343 2px 5px 5px;
+    border-style:ridge;
+    color: rgb(216, 228, 50);
+    margin: 5px 20px 0px 20px;
+
+}
+
+.autres_formations ul li{
+    list-style-type: none;
+    margin: 30px;
+    padding: 5px;
+    font-size: 25px;
+    
+    font-family: quicksand, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* stylisation de la section experience */
+.competences h2{
+    text-align: center;
+    font-family: alex;
+    background-color:rgba(160, 52, 88, 0.657);
+    border-radius: 20px;
+    font-size: 40px;
+    padding: 10px;
+    box-shadow: #434343 2px 5px 5px;
+    border-style:ridge;
+    color: rgb(216, 228, 50);
+    margin: 5px 20px 0px 20px;
+
+}
