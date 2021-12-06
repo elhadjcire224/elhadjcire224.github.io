@@ -60,48 +60,72 @@ nav ul{
    
 }
 /* liens style */
-
-
-.nav_qui_suis-je:hover{
-    background-color: rgba(153, 153, 153, 0.446);
-    /* flex:1; */
-    text-align: center;
-    padding-top: 25px; ;
-    border-top:rgba(153, 153, 153, 1) 5px solid;
-
-}
-
-
-
-/* nav{
-    margin: 0%;
-}
-header nav ul li a{
-    color: white;
+a{
     text-decoration: none;
-    padding: 30px;
-    font-family: quicksand;
-    font-size: 104%;
-    
-}
-header nav ul li{
-    list-style-type: none;
-     padding: 30px; 
-    text-align: center;
-     border: white 1px solid; 
-     list-style-type:var(▶); 
-    
+    color: rgba(160, 52, 88, 1);
 }
 
-header nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    background-color: #434343;
-    margin: 0%; 
-     
-    
-}*/
+a:hover{
+    color: red;
+}
+
+a:visited{
+    text-decoration: underline rgba(160, 52, 88, 1);
+}
+
+nav a:hover{
+    padding:25px 20px;
+}
+#nav_qui_suis-je:hover{
+    background-color: rgba(153, 153, 153, 0.146);
+    /* flex:1; */
+    /* text-align: center; */
+    color: white;
+    border-top:rgba(153, 153, 153, 1) 5px solid;
+}
+
+#nav_experiences:hover{
+    background-color: rgba(187, 224, 99, 0.146);
+    /* flex:1;    */
+    /* text-align: center; */
+    color: white;
+    border-top:rgb(190, 228, 102) 5px solid;
+}
+
+#nav_cursus:hover{
+    background-color: rgba(208, 219, 57, 0.146);
+    /* flex: 1; */
+    /* text-align: center; */
+    color: white;
+    border-top:rgb(216, 228, 50) 5px solid;
+}
+
+#nav_autres_formations:hover{
+    background-color: rgba(57, 187, 219, 0.146);
+    /* flex: 1; */
+    /* text-align: center; */
+    color: white;
+    border-top:rgb(57, 146, 219) 5px solid;
+}
+
+#nav_competences:hover{
+    background-color: rgba(255, 166, 0, 0.146);
+    /* flex: 1; */
+    /* text-align: center; */
+    color: white;
+    border-top:orange 5px solid;
+}
+
+#nav_contacte_moi:hover{
+    background-color: rgba(165, 67, 204, 0.146);
+    /* flex: 1; */
+    /* text-align: center; */
+    color: white;
+    border-top:rgba(165, 67, 204, 0.924) 5px solid;
+}
+
+
+
 /* stylisation de l'image profile */
 a img{
     width: 300px;
@@ -126,25 +150,29 @@ a img{
 }
 
 /* stylisation de titre de ma balise "qui_suis-je" */
-section div h2{ /*stylisation du titre */
+/* stylisation des h2 */
+h2{
     text-align: center;
     font-family: alex;
-    background-color: rgba(160, 52, 88, 0.657);
+    background-color:rgba(160, 52, 88, 0.657);
     border-radius: 20px;
-    font-size: 35px;
+    font-size: 40px;
     padding: 10px;
     box-shadow: #434343 2px 5px 5px;
     border-style:ridge;
-    color: #777;
-    text-transform: capitalize;
-    margin: 5px 0px 0px 0px;
+
+    margin: 5px 20px 0px 20px;
     transition: color 1s ease-in, background-color 2s;
     -moz-transition: color 1s ease-in, background-color 2s;
     -o-transition: color 1s ease-in, background-color 2s;
     -webkit-transition: color 1s ease-in, background-color 2s;
 }
+section div h2{ /*stylisation du titre */
+    color: #777;
+}
 section div h2:hover{
     background-color: #999;
+    margin: 5px 20px 0px 20px;
     color: rgba(160, 52, 88, 0.657);
     box-shadow:0px 2px 10px #444;
 
@@ -174,20 +202,8 @@ section div h2:hover{
     font-size: 25px;
 }
 .section_experience h2{
-    text-align: center;
-    font-family: alex;
-    background-color:rgba(160, 52, 88, 0.657);
-    border-radius: 20px;
-    font-size: 40px;
-    padding: 10px;
-    box-shadow: #434343 2px 5px 5px;
-    border-style:ridge;
     color: rgba(157, 197, 120, 1);
     margin: 5px 20px 0px 0px;
-    transition: color 1s ease-in, background-color 2s;
-    -moz-transition: color 1s ease-in, background-color 2s;
-    -o-transition: color 1s ease-in, background-color 2s;
-    -webkit-transition: color 1s ease-in, background-color 2s;
 }
 .section_experience h2:hover{
     background-color: rgba(174, 197, 120, 0.883);;
@@ -212,20 +228,8 @@ section div h2:hover{
 
 /* stylisation du section cursus */
 .cursus h2{
-    text-align: center;
-    font-family: alex;
-    background-color:rgba(160, 52, 88, 0.657);
-    border-radius: 20px;
-    font-size: 40px;
-    padding: 10px;
-    box-shadow: #434343 2px 5px 5px;
-    border-style:ridge;
     color: rgb(216, 228, 50);
     margin: 5px 20px 0px 20px;
-    transition: color 1s ease-in, background-color 2s;
-    -moz-transition: color 1s ease-in, background-color 2s;
-    -o-transition: color 1s ease-in, background-color 2s;
-    -webkit-transition: color 1s ease-in, background-color 2s;
 }
 
 .cursus h2:hover{
@@ -234,12 +238,11 @@ section div h2:hover{
     box-shadow:0px 2px 10px #444;
 }
 .ecole{
-    font-family: quicksandbold;
+    font-family: quicksandbolditalique;
     font-size: 30px;
     margin: 20px 0px 0px 10px;
     text-transform: uppercase;
     color:rgba(160, 52, 88, 0.457);
-    /* color:linear-gradient(rgba(160, 52, 88, 0.457),white,black); */
 }
 .date{
     padding: 15px;
@@ -251,7 +254,7 @@ section div h2:hover{
     border-radius: 20px;
     border: rgba(160, 52, 88, 0.957) outset 3px;
     /* margin-right: 10px; */
-    font-size:20px;
+    font-size:25px;
     transition: border 1s ease-in-out, background-color 2s;
     -moz-transition: border 1s ease-in-out, background-color 2s;
     -o-transition: border 1s ease-in-out, background-color 2s;
@@ -260,7 +263,7 @@ section div h2:hover{
 .date:hover{
     box-shadow: black 0px 0px 10px;
     border: white inset 3px; 
-    padding: 13px;   
+    padding: 16px;   
 
 }
 .cursus li{
@@ -271,39 +274,118 @@ section div h2:hover{
 }
 /* stylisation de la section "autres formations" */
 .autres_formations h2{
-    text-align: center;
-    font-family: alex;
-    background-color:rgba(160, 52, 88, 0.657);
-    border-radius: 20px;
-    font-size: 40px;
-    padding: 10px;
-    box-shadow: #434343 2px 5px 5px;
-    border-style:ridge;
-    color: rgb(216, 228, 50);
+    color: rgba(0, 0, 128, 0.959);;
     margin: 5px 20px 0px 20px;
+    margin-bottom: 30px;
 
 }
+.autres_formations div{
+    height: 100px;
+}
+.autres_formations p{
+    display: inline;
+    padding: 10px;
+    word-wrap: break-word;
+    font-family: quicksand , 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    background-color: ghostwhite;
+    border-radius: 20px;
+}
 
-.autres_formations ul li{
+.autres_formations h2:hover{
+    background-color:rgba(0, 0, 128, 0.459);
+    color: rgba(160, 52, 88, 0.657);
+    box-shadow:0px 2px 10px #444;
+}    
+
+
+
+/* .autres_formations ul li{
     list-style-type: none;
     margin: 30px;
     padding: 5px;
     font-size: 25px;
     
     font-family: quicksand, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
+
+/* stylisation de la section competence */
+.competences h2{
+    color: orange;
+    margin: 5px 20px 0px 20px;
 }
 
-/* stylisation de la section experience */
-.competences h2{
-    text-align: center;
-    font-family: alex;
-    background-color:rgba(160, 52, 88, 0.657);
-    border-radius: 20px;
-    font-size: 40px;
-    padding: 10px;
-    box-shadow: #434343 2px 5px 5px;
-    border-style:ridge;
-    color: rgb(216, 228, 50);
-    margin: 5px 20px 0px 20px;
+.competences h2:hover{
+    background-color: rgba(255, 166, 0, 0.3);
+    color: rgba(160, 52, 88, 0.657);
+    box-shadow:0px 2px 10px #444;
+}
+.competences div li{
+    list-style-type: none;
+    padding: 5px;
+}
+.competences div{
+    display: flex;
+    justify-content: space-between;
+    line-height: 250%;
+    margin: 0% 12%;
+    font-family: quicksand, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:  140%; 
+}
 
+/* stylisation de la section 'contacte moi' */
+
+.contacte_moi h2{
+    color:rgba(165, 67, 204, 1);
+    margin: 5px 20px 20px 20px;
+}
+
+.contacte_moi h2:hover{
+    background-color:rgba(165, 67, 204, 0.3);
+    color: rgba(160, 52, 88, 0.657);
+    box-shadow:0px 2px 10px #444;
+}
+.contacte_moi address{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: stretch;
+    line-height: 50px;
+    
+
+}
+.contacte_moi address p{
+    border: solid black 2px;
+    margin: 0% 15%;
+    text-align: start;
+    border-radius: 15px;
+    padding: 10px 40px;
+    font-size: 25px;
+    font-family: quicksand;
+    background-color: ghostwhite;
+    word-wrap:break-word;
+
+}
+footer{
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: #545454;
+    color: white;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: quicksand , 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#cv_footer{
+    margin-left: 15px;
+    background-color: rgb(221, 224, 33);
+    border-radius: 15px;
+    
+    font-weight: bolder;
+    border:white outset 4px;
+}
+#cv_footer:hover{
+    background-color: white;
+    border:rgb(221, 224, 33) outset 4px;
 }
